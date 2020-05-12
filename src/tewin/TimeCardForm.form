@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Time Card Form"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Default Cursor"/>
+    </Property>
+    <Property name="locationByPlatform" type="boolean" value="true"/>
+    <Property name="name" type="java.lang.String" value="TCForm" noResource="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lLaborType" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lJobNum" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cbJobs" pref="262" max="32767" attributes="1"/>
+                          <Component id="cbLaborType" alignment="0" pref="262" max="32767" attributes="1"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lTaskID" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="tbTaskID" min="-2" pref="56" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="1">
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="bComment" alignment="1" max="32767" attributes="1"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="bPrevLine" max="32767" attributes="1"/>
+                                          <Component id="bDelete" alignment="0" min="-2" pref="112" max="-2" attributes="1"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="bSave" min="-2" pref="79" max="-2" attributes="1"/>
+                                          <Component id="bExit" alignment="0" max="32767" attributes="1"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="bNextLine" max="32767" attributes="1"/>
+                                          <Component id="bInsert" alignment="1" min="-2" pref="113" max="-2" attributes="1"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="ID" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                      <Component id="lHrs" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      <Component id="lComments" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="lTue" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lSun" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lMon" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lWed" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lThu" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lSat" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lFri" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="tbSunHrs" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Component id="tbMonHrs" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Component id="tbTueHrs" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Component id="tbSatHrs" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Component id="tbWedHrs" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Component id="tbThuHrs" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                                          <Component id="tbFriHrs" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="tbSunCom" alignment="0" min="-2" pref="237" max="-2" attributes="1"/>
+                                          <Component id="tbTueCom" min="-2" pref="237" max="-2" attributes="0"/>
+                                          <Component id="tbFriCom" min="-2" pref="237" max="-2" attributes="0"/>
+                                          <Component id="tbThuCom" alignment="0" min="-2" pref="237" max="-2" attributes="0"/>
+                                          <Component id="tbSatCom" min="-2" pref="237" max="-2" attributes="0"/>
+                                          <Component id="tbMonCom" min="-2" pref="237" max="-2" attributes="1"/>
+                                          <Component id="tbWedCom" min="-2" pref="237" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="bSatExp" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="bFriExp" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="bThuExp" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="bWedExp" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="bTueExp" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="bMonExp" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="bSunExp" alignment="0" max="32767" attributes="1"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="13" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lCurrLine" alignment="0" pref="124" max="32767" attributes="1"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Component id="lPosition" pref="116" max="32767" attributes="1"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lCurPos" min="-2" pref="35" max="-2" attributes="1"/>
+                  <Component id="lTotLines" min="-2" pref="35" max="-2" attributes="1"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="lLineTotal" max="32767" attributes="1"/>
+                  <Component id="lTCTot" alignment="1" min="-2" pref="107" max="-2" attributes="1"/>
+              </Group>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lTCTotalHrs" min="-2" pref="49" max="-2" attributes="1"/>
+                  <Component id="lTotHrs" alignment="0" min="-2" max="-2" attributes="1"/>
+              </Group>
+              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cbJobs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lJobNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lTaskID" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbTaskID" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lLaborType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbLaborType" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lTotHrs" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="lCurrLine" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lTotLines" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lLineTotal" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lPosition" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lCurPos" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                      <Component id="lTCTot" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                      <Component id="lTCTotalHrs" alignment="3" pref="17" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lHrs" min="-2" max="-2" attributes="0"/>
+                  <Component id="lComments" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lSun" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbSunHrs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbSunCom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bSunExp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lMon" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbMonHrs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbMonCom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bMonExp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lTue" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbTueHrs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbTueCom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bTueExp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tbWedHrs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbWedCom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lWed" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bWedExp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lThu" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbThuHrs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbThuCom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bThuExp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tbFriHrs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbFriCom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lFri" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bFriExp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lSat" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbSatHrs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tbSatCom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bSatExp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="bComment" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="bDelete" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="bSave" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="bInsert" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="bExit" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="bNextLine" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ID" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="bPrevLine" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lSun">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sunday"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lMon">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Monday"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lTue">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tuesday"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lWed">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Wednesday"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lThu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Thursday"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lFri">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Friday"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lSat">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Saturday"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbSunHrs">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Sunday Hours"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbMonHrs">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Monday Hours"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbTueHrs">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Tuesday Hours"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbWedHrs">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Wednesday Hours"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbThuHrs">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Thursday Hours"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbFriHrs">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Friday Hours"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbSatHrs">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Saturday Hours"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbSunCom">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbMonCom">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbTueCom">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbWedCom">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbThuCom">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbFriCom">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbSatCom">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lJobNum">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Job Number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lTaskID">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Task ID"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lLaborType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Labor Type"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tbTaskID">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter Task ID"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbLaborType">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="12">
+            <StringItem index="0" value="EESD Labor"/>
+            <StringItem index="1" value="EESD Time and Half"/>
+            <StringItem index="2" value="EESD Double Time"/>
+            <StringItem index="3" value="EESD Unassigned"/>
+            <StringItem index="4" value="EESD Unapplied"/>
+            <StringItem index="5" value="EESD Authorized"/>
+            <StringItem index="6" value="EESD Holiday"/>
+            <StringItem index="7" value="EESD Vacation"/>
+            <StringItem index="8" value="EESD Safety"/>
+            <StringItem index="9" value="EESD Training"/>
+            <StringItem index="10" value="EESD Marketing"/>
+            <StringItem index="11" value="EESD Sick"/>
+          </StringArray>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Select Labor type from drop-down or type in custom value"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tbChanged"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mouseChange"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lComments">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Comments"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lHrs">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Time"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="bPrevLine">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt; Prev. Line"/>
+        <Property name="toolTipText" type="java.lang.String" value="Move to Previous Line on Time Card"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bPrevLineActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bNextLine">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Next Line &gt;"/>
+        <Property name="toolTipText" type="java.lang.String" value="Move to next line on time Card"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bNextLineActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bSave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+        <Property name="toolTipText" type="java.lang.String" value="Save changes to current line"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bSaveActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bExit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exit"/>
+        <Property name="toolTipText" type="java.lang.String" value="Exit or Cancel"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bExitActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lCurrLine">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="text" type="java.lang.String" value="Total Lines"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lPosition">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="text" type="java.lang.String" value="Line Position"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lTotLines">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lCurPos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lTotHrs">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lLineTotal">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="text" type="java.lang.String" value="Line Total"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lTCTot">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="text" type="java.lang.String" value="Time Card Total"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lTCTotalHrs">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbJobs">
+      <Properties>
+        <Property name="editable" type="boolean" value="true"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Select Job Number from List or Type in New"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tbChanged"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mouseChange"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="keyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bDelete">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Delete"/>
+        <Property name="toolTipText" type="java.lang.String" value="Delete current line from time card (no undo)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bDeleteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bInsert">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Add Line"/>
+        <Property name="toolTipText" type="java.lang.String" value="Add a new line to time card"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bInsertActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bComment">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Add/Update Time Card Comment"/>
+        <Property name="toolTipText" type="java.lang.String" value="Click to Add Comment for Entire Time Card"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bCommentActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bSunExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="$$$"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sunday Expense"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bSunExpActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bMonExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="$$$"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sunday Expense"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bMonExpActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bTueExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="$$$"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sunday Expense"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bTueExpActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bWedExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="$$$"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sunday Expense"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bWedExpActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bThuExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="$$$"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sunday Expense"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bThuExpActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bFriExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="$$$"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sunday Expense"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bFriExpActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="bSatExp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="$$$"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sunday Expense"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bSatExpActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TimeCardForm_bSave"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ID">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

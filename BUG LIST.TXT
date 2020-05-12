@@ -1,0 +1,47 @@
+ISSUE												STATUS
+____________________________________________________________________________________________________________
+
+1. TIME CARD FORM   -  										FIXED
+    Selecting add line. click next line gives error.
+
+2. TIME CARD IMPORT - 										FIXED
+    Error occurs when importing CSV comment on a blank week.
+		
+3. ADD CHECK FOR COMMAS IN COMMENT FIELDS - 							FIXED
+    Prevent error when importing time card with commas in field.
+
+4. MODIFY TIME CARD FOR SMALLER VIEW -								FIXED
+    Allow to have on screen at the same time as other forms.
+
+5. HISTORICAL DATABASE EXPORT NOT IMPLAMENTED							FUTURE
+    Add function to allow export of database based on year.
+        file should be automatically named by year.
+    Add import function??
+
+6. IF ERROR ON NEW TIME CARD REDIRECTED TO WRONG SCREEN & ADD LINE IS DISABLED - 		FIXED
+
+7. AFTER SAVING TIME CARD ON NEW WEEK REDIRECTED TO LINE 1, 
+   BUT NEW CARD WAS SAVED ON LINE. PREV & NEXT BUTTONS DISABLED.
+	UNABLE TO GET TO FIRST SAVED CARD. - 							FIXED
+
+8. YEAR SEARCH RETURNS NO RESULTS								FIXED
+	Fine tune SQL command to return only last week of prior year 					
+        and first week of following year
+
+9. EXPORT CSV ON SEARCH PAGE NOT IMPLIMENTED							FIXED
+
+10. SEARCH RESULTS NOT SORTED									FIXED
+
+11. ADD TEXT TIP SHOWING JOB NUMBERS FOR EACH DAY. ASSIGN TO null IF BLANK.			SET TO SHOW WEEK # INSTEAD
+
+12. ADD REMEMBERING LAST DIRECTORY OPENED TO IMPORT FUNCTION.					FUTURE
+
+13. MISsING INI Catch DOES NOT CREATE A VALID NEW INI FILE UPON EXIT OF SETUP -  		FIXED
+
+14. FILE NOT FOUND EXCEPTION THROWN TO STACK TRACE IF TE.INI NOT FOUND (FAILED START)		INTENTIONAL (NO FIX NECESSARY)
+
+15. ON MAIN PAGE THE WEEK NUMBER FOR LAST WEEK OF YEAR IS TAGGED TO WRONG YEAR. 		FIXED
+    SHOWS PREVIOUS YEARS DATA.								
+
+16. TIME CARD CRASHES WHEN MAX # OF JOB NUMBERS POPULATED TO JOB COMBO BOX IS EXCEEDED		FIXED
+
